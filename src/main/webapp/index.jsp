@@ -34,8 +34,8 @@
                 </tr>
                 <tr>
                     <td>Black</td>
-                    <td><%= Constants.BLACK_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.BLACK %>" maxlength="1"></td>
+                    <td><%= Constants.BLACK_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>Blue</td>
@@ -54,8 +54,8 @@
                 </tr>
                 <tr>
                     <td>Red</td>
-                    <td><%= Constants.RED_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.RED %>" maxlength="1"></td>
+                    <td><%= Constants.RED_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>Magenta</td>
