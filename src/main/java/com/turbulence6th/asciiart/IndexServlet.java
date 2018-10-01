@@ -37,13 +37,23 @@ public class IndexServlet extends HttpServlet {
         Part file = request.getPart(FILE);
 
         BufferedImage oldImage = ImageIO.read(file.getInputStream());
-        BufferedImage image = new BufferedImage(oldImage.getWidth() / scale, oldImage.getHeight() / scale, BufferedImage.TYPE_INT_RGB);
 
-        Graphics g = image.createGraphics();
-        g.drawImage(oldImage, 0, 0, oldImage.getWidth() / scale, oldImage.getHeight() / scale, null);
-        g.dispose();
+        BufferedImage image = null;
+        BufferedImage output = null;
+        while (output != null) {
+            image = new BufferedImage(oldImage.getWidth() / scale, oldImage.getHeight() / scale, BufferedImage.TYPE_INT_RGB);
 
-        BufferedImage output = new BufferedImage(image.getWidth() * fontSize, image.getHeight() * fontSize, BufferedImage.TYPE_INT_RGB);
+            Graphics g = image.createGraphics();
+            g.drawImage(oldImage, 0, 0, oldImage.getWidth() / scale, oldImage.getHeight() / scale, null);
+            g.dispose();
+
+            try {
+                output = new BufferedImage(image.getWidth() * fontSize, image.getHeight() * fontSize, BufferedImage.TYPE_INT_RGB);
+            } catch (OutOfMemoryError e) {
+                scale++;
+            }
+        }
+
         Graphics graphics = output.getGraphics();
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, image.getWidth() * fontSize, image.getHeight() * fontSize);
