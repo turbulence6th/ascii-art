@@ -12,25 +12,25 @@
             <thead>
                 <tr style="font-weight: bold">
                     <td>Setting</td>
-                    <td>Default</td>
                     <td>Input</td>
+                    <td>Default</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Scale</td>
-                    <td><%= Constants.DEFAULT_SCALE %></td>
                     <td><input type="number" name="<%= Constants.SCALE %>" step="1"></td>
+                    <td><%= Constants.DEFAULT_SCALE %></td>
                 </tr>
                 <tr>
                     <td>Font Size</td>
-                    <td><%= Constants.DEFAULT_FONT_SIZE %></td>
                     <td><input type="number" name="<%= Constants.FONT_SIZE %>" step="1"></td>
+                    <td><%= Constants.DEFAULT_FONT_SIZE %></td>
                 </tr>
                 <tr>
                     <td>Brightness</td>
-                    <td><%= Constants.DEFAULT_BRIGHTNESS %></td>
                     <td><input type="number" step="0.01" name="<%= Constants.BRIGHTNESS %>"></td>
+                    <td><%= Constants.DEFAULT_BRIGHTNESS %></td>
                 </tr>
                 <tr>
                     <td>Black</td>
@@ -39,18 +39,18 @@
                 </tr>
                 <tr>
                     <td>Blue</td>
-                    <td><%= Constants.BLUE_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.BLUE %>" maxlength="1"></td>
+                    <td><%= Constants.BLUE_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>Green</td>
-                    <td><%= Constants.GREEN_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.GREEN %>" maxlength="1"></td>
+                    <td><%= Constants.GREEN_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>Cyan</td>
-                    <td><%= Constants.CYAN_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.CYAN %>" maxlength="1"></td>
+                    <td><%= Constants.CYAN_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>Red</td>
@@ -59,18 +59,18 @@
                 </tr>
                 <tr>
                     <td>Magenta</td>
-                    <td><%= Constants.MAGENTA_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.MAGENTA %>" maxlength="1"></td>
+                    <td><%= Constants.MAGENTA_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>Yellow</td>
-                    <td><%= Constants.YELLOW_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.YELLOW %>" maxlength="1"></td>
+                    <td><%= Constants.YELLOW_DEFAULT %></td>
                 </tr>
                 <tr>
                     <td>White</td>
-                    <td><%= Constants.WHITE_DEFAULT %></td>
                     <td><input type="text" name="<%= Constants.WHITE %>" maxlength="1"></td>
+                    <td><%= Constants.WHITE_DEFAULT %></td>
                 </tr>
             </tbody>
         </table> <br>
