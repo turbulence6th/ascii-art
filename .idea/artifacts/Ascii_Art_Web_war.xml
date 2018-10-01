@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Ascii Art Web:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Ascii Art Web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Ascii Art Web:war exploded" />
+    </root>
+  </artifact>
+</component>
