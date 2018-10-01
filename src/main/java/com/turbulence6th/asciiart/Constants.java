@@ -6,12 +6,12 @@ public class Constants {
 
     public static final String SCALE = "scale";
     public static final String FONT_SIZE = "fontSize";
-    public static final String BRIGHTNESS = "brightness";
+    public static final String DARKNESS = "darkness";
     public static final String FILE = "file";
 
     public static final int DEFAULT_SCALE = 1;
     public static final int DEFAULT_FONT_SIZE = 8;
-    public static final double DEFAULT_BRIGHTNESS = 0.5;
+    public static final double DEFAULT_DARKNESS = 0.5;
 
     public static final String BLACK = "black";
     public static final String BLUE = "blue";
@@ -31,7 +31,6 @@ public class Constants {
     public static final char YELLOW_DEFAULT = '-';
     public static final char WHITE_DEFAULT = '.';
 
-    public static final int BUFFER_SIZE = 1024;
     public static final String OUTPUT_FILE_NAME = "ascii.png";
     public static final String OUTPUT_FORMAT = "png";
 

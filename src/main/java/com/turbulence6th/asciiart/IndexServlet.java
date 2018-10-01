@@ -23,7 +23,7 @@ public class IndexServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int scale = Optional.ofNullable(request.getParameter(SCALE)).filter(IndexServlet::notEmptyString).map(Integer::parseInt).orElse(DEFAULT_SCALE);
         int fontSize = Optional.ofNullable(request.getParameter(FONT_SIZE)).filter(IndexServlet::notEmptyString).map(Integer::parseInt).orElse(DEFAULT_FONT_SIZE);
-        double brightness = Optional.ofNullable(request.getParameter(BRIGHTNESS)).filter(IndexServlet::notEmptyString).map(Double::parseDouble).orElse(DEFAULT_BRIGHTNESS);
+        double brightness = Optional.ofNullable(request.getParameter(DARKNESS)).filter(IndexServlet::notEmptyString).map(Double::parseDouble).orElse(DEFAULT_DARKNESS);
 
         char black = Optional.ofNullable(request.getParameter(BLACK)).filter(IndexServlet::notEmptyString).map(IndexServlet::strToChar).orElse(BLACK_DEFAULT);
         char blue = Optional.ofNullable(request.getParameter(BLUE)).filter(IndexServlet::notEmptyString).map(IndexServlet::strToChar).orElse(BLUE_DEFAULT);

@@ -28,9 +28,9 @@
                     <td><%= Constants.DEFAULT_FONT_SIZE %></td>
                 </tr>
                 <tr>
-                    <td>Brightness</td>
-                    <td><input type="number" step="0.01" name="<%= Constants.BRIGHTNESS %>"></td>
-                    <td><%= Constants.DEFAULT_BRIGHTNESS %></td>
+                    <td>Darkness</td>
+                    <td><input type="number" step="0.01" name="<%= Constants.DARKNESS %>"></td>
+                    <td><%= Constants.DEFAULT_DARKNESS %></td>
                 </tr>
                 <tr>
                     <td>Black</td>
