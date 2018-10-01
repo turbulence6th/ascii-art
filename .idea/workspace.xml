@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ddafe9e-e1e3-4cbd-a2e4-7120d7fe8c40" name="Default Changelist" comment="">
+    <list default="true" id="2ddafe9e-e1e3-4cbd-a2e4-7120d7fe8c40" name="Default Changelist" comment="brig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java" afterDir="false" />
     </list>
@@ -53,19 +53,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="19" />
-          <entry key="java" value="2441" />
+          <entry key="java" value="2458" />
           <entry key="js" value="272" />
           <entry key="jsp" value="1336" />
-          <entry key="txt" value="70" />
+          <entry key="txt" value="91" />
           <entry key="xml" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2441" />
+          <entry key="JAVA" value="2458" />
           <entry key="JSP" value="1336" />
           <entry key="JavaScript" value="272" />
-          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="PLAIN_TEXT" value="110" />
           <entry key="XML" value="74" />
         </counts>
       </usages-collector>
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="131">
+              <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="94" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5705#5706#0" expanded="true" />
@@ -275,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538422406936" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538423120562" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/js/jquery-3.2.0.min.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
@@ -407,7 +407,7 @@
       <option name="presentableId" value="Default" />
       <updated>1538151269276</updated>
       <workItem from="1538151348259" duration="6064000" />
-      <workItem from="1538250140760" duration="12862000" />
+      <workItem from="1538250140760" duration="13525000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1538420001373</created>
@@ -465,11 +465,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538422375395</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="while error fixed">
+      <created>1538422468927</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538422468927</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18926000" />
+    <option name="totallyTimeSpent" value="19589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,7 +535,8 @@
     <MESSAGE value="Deploy" />
     <MESSAGE value="refactor brightness -&gt; darkness" />
     <MESSAGE value="error check added" />
-    <option name="LAST_COMMIT_MESSAGE" value="error check added" />
+    <MESSAGE value="while error fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="while error fixed" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -642,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state relative-caret-position="131">
+          <caret line="93" column="42" selection-start-line="93" selection-start-column="42" selection-end-line="94" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5705#5706#0" expanded="true" />

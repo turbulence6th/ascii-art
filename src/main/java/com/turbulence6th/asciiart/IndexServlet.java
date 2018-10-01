@@ -23,7 +23,7 @@ public class IndexServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int scale = Optional.ofNullable(request.getParameter(SCALE)).filter(IndexServlet::notEmptyString).map(Integer::parseInt).orElse(DEFAULT_SCALE);
         int fontSize = Optional.ofNullable(request.getParameter(FONT_SIZE)).filter(IndexServlet::notEmptyString).map(Integer::parseInt).orElse(DEFAULT_FONT_SIZE);
-        double brightness = Optional.ofNullable(request.getParameter(DARKNESS)).filter(IndexServlet::notEmptyString).map(Double::parseDouble).orElse(DEFAULT_DARKNESS);
+        double darkness = Optional.ofNullable(request.getParameter(DARKNESS)).filter(IndexServlet::notEmptyString).map(Double::parseDouble).orElse(DEFAULT_DARKNESS);
 
         char black = Optional.ofNullable(request.getParameter(BLACK)).filter(IndexServlet::notEmptyString).map(IndexServlet::strToChar).orElse(BLACK_DEFAULT);
         char blue = Optional.ofNullable(request.getParameter(BLUE)).filter(IndexServlet::notEmptyString).map(IndexServlet::strToChar).orElse(BLUE_DEFAULT);
@@ -69,21 +69,21 @@ public class IndexServlet extends HttpServlet {
 
                 char c = 0;
 
-                if (checkBrightness(redColor, brightness) && checkBrightness(greenColor, brightness) && checkBrightness(blueColor, brightness)) {
+                if (checkDarkness(redColor, darkness) && checkDarkness(greenColor, darkness) && checkDarkness(blueColor, darkness)) {
                     c = black;
-                } else if (checkBrightness(redColor, brightness) && checkBrightness(greenColor, brightness) && !checkBrightness(blueColor, brightness)) {
+                } else if (checkDarkness(redColor, darkness) && checkDarkness(greenColor, darkness) && !checkDarkness(blueColor, darkness)) {
                     c = blue;
-                } else if (checkBrightness(redColor, brightness) && !checkBrightness(greenColor, brightness) && checkBrightness(blueColor, brightness)) {
+                } else if (checkDarkness(redColor, darkness) && !checkDarkness(greenColor, darkness) && checkDarkness(blueColor, darkness)) {
                     c = green;
-                } else if (checkBrightness(redColor, brightness) && !checkBrightness(greenColor, brightness) && !checkBrightness(blueColor, brightness)) {
+                } else if (checkDarkness(redColor, darkness) && !checkDarkness(greenColor, darkness) && !checkDarkness(blueColor, darkness)) {
                     c = cyan;
-                } else if (!checkBrightness(redColor, brightness) && checkBrightness(greenColor, brightness) && checkBrightness(blueColor, brightness)) {
+                } else if (!checkDarkness(redColor, darkness) && checkDarkness(greenColor, darkness) && checkDarkness(blueColor, darkness)) {
                     c = red;
-                } else if (!checkBrightness(redColor, brightness) && checkBrightness(greenColor, brightness) && !checkBrightness(blueColor, brightness)) {
+                } else if (!checkDarkness(redColor, darkness) && checkDarkness(greenColor, darkness) && !checkDarkness(blueColor, darkness)) {
                     c = magenta;
-                } else if (!checkBrightness(redColor, brightness) && !checkBrightness(greenColor, brightness) && checkBrightness(blueColor, brightness)) {
+                } else if (!checkDarkness(redColor, darkness) && !checkDarkness(greenColor, darkness) && checkDarkness(blueColor, darkness)) {
                     c = yellow;
-                } else if (!checkBrightness(redColor, brightness) && !checkBrightness(greenColor, brightness) && !checkBrightness(blueColor, brightness)) {
+                } else if (!checkDarkness(redColor, darkness) && !checkDarkness(greenColor, darkness) && !checkDarkness(blueColor, darkness)) {
                     c = white;
                 }
 
@@ -96,8 +96,8 @@ public class IndexServlet extends HttpServlet {
         ImageIO.write(output, OUTPUT_FORMAT, response.getOutputStream());
     }
 
-    private static boolean checkBrightness(int color, double brightness) {
-        return color < 255 * brightness;
+    private static boolean checkDarkness(int color, double darkness) {
+        return color <= 255 * darkness;
     }
 
     private static boolean notEmptyString(String str) {
