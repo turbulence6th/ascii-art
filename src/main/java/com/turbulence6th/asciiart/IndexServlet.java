@@ -40,7 +40,7 @@ public class IndexServlet extends HttpServlet {
 
         BufferedImage image = null;
         BufferedImage output = null;
-        while (output != null) {
+        while (output == null) {
             image = new BufferedImage(oldImage.getWidth() / scale, oldImage.getHeight() / scale, BufferedImage.TYPE_INT_RGB);
 
             Graphics g = image.createGraphics();

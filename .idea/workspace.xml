@@ -53,19 +53,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="19" />
-          <entry key="java" value="2440" />
+          <entry key="java" value="2441" />
           <entry key="js" value="272" />
           <entry key="jsp" value="1336" />
-          <entry key="txt" value="53" />
+          <entry key="txt" value="70" />
           <entry key="xml" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2440" />
+          <entry key="JAVA" value="2441" />
           <entry key="JSP" value="1336" />
           <entry key="JavaScript" value="272" />
-          <entry key="PLAIN_TEXT" value="72" />
+          <entry key="PLAIN_TEXT" value="89" />
           <entry key="XML" value="74" />
         </counts>
       </usages-collector>
@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            <state relative-caret-position="82">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5705#5706#0" expanded="true" />
@@ -275,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538422351208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538422406936" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/js/jquery-3.2.0.min.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
@@ -407,7 +407,7 @@
       <option name="presentableId" value="Default" />
       <updated>1538151269276</updated>
       <workItem from="1538151348259" duration="6064000" />
-      <workItem from="1538250140760" duration="12770000" />
+      <workItem from="1538250140760" duration="12862000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy">
       <created>1538420001373</created>
@@ -458,11 +458,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538421927114</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="error check added">
+      <created>1538422375395</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538422375395</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18834000" />
+    <option name="totallyTimeSpent" value="18926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,19 +527,8 @@
     <MESSAGE value="column sırası değişti." />
     <MESSAGE value="Deploy" />
     <MESSAGE value="refactor brightness -&gt; darkness" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor brightness -&gt; darkness" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="error check added" />
+    <option name="LAST_COMMIT_MESSAGE" value="error check added" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -646,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/turbulence6th/asciiart/IndexServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        <state relative-caret-position="82">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5705#5706#0" expanded="true" />
