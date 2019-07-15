@@ -91,7 +91,7 @@ public class IndexServlet extends HttpServlet {
             }
         }
 
-        response.setHeader("Content-disposition",String.format("attachment; filename=%s", OUTPUT_FILE_NAME));
+//        response.setHeader("Content-disposition",String.format("attachment; filename=%s", OUTPUT_FILE_NAME));
 
         ImageIO.write(output, OUTPUT_FORMAT, response.getOutputStream());
     }
